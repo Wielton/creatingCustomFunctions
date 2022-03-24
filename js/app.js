@@ -8,7 +8,7 @@
 //              return this newly computed value.
 
 function equationOne(num1, num2) {
-    return (num1*num2) * 5;
+    return (num1 + num2) * 5;
 }
 
 // Function 2 - This function will take in 1 argument expected to be a string. 
@@ -53,6 +53,12 @@ function characterCheck(arr) {
     }
 }
 
+function checkStartsWith(str, regex) {
+    if (str.startsWith('')) {
+        console.log(`This is the first word that starts with ${regex}`)
+    }
+}
+
 
 // Function 1: output
 const result1 = equationOne(1, 5)
@@ -61,6 +67,8 @@ const result2 = equationOne(3, 7)
 console.log(result2);
 const result3 = equationOne(2, 6)
 console.log(result3);
+
+equationOne(3, 5);
 
 // Function 2: output
 const charCheck1 =  stringLengthCheck('This string is longer than 10 characters');
